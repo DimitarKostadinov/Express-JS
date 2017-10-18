@@ -1,0 +1,20 @@
+<table style="width:100%">
+    
+  <tr>
+    <th>Mark</th>
+    <th>Model</th> 
+    <th>Image</th>
+    <th>Year</th>
+    <th>Day Price</th>
+  </tr>
+  {{#each dataObj}}
+  <tr>
+    <td>{{this.mark}}</td>
+    <td>{{this.model}}</td> 
+    <td><img src="{{this.image}}" alt="CArImage"></td>
+    <td>{{this.year}}</td>
+    <td>{{this.pricePerDay}}</td>
+  </tr>
+  {{/each}}
+   
+</table>
